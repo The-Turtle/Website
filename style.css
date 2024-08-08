@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light aqua background */
+    color: #004d40; /* Dark teal text */
+}
+
+header {
+    background-color: #00796b; /* Darker teal for header */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Aligns navigation to the right */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px; /* Space between the tabs */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    border-radius: 4px;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the content area */
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.research-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.research-list li {
+    margin-bottom: 20px;
+}
+
+.research-list a {
+    font-weight: bold;
+    color: #00796b; /* Same teal color for consistency */
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.research-list a:hover {
+    color: #004d40; /* Darker teal on hover */
+}
+
+.research-list p {
+    margin-top: 5px;
+    color: #004d40; /* Dark teal for the description text */
+}
+
+.post {
+    background-color: #ffffff;
+    border: 2px solid #00796b; /* Teal border for the post box */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    margin-top: 0;
+    color: #004d40; /* Dark teal for the title */
+}
+
+.post p {
+    color: #333; /* Darker color for the text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light aqua background */
+    color: #004d40; /* Dark teal text */
+    line-height: 1.6; /* Adjust the line spacing here */
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff; /* White background for content area */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the content area */
+    line-height: 1.6; /* Adjust the line spacing here */
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* One column layout */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.video-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 2px solid #00796b; /* Teal border */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.video-container p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #004d40; /* Dark teal for the titles */
+}
+
+.problem-box {
+    background-color: #ffffff;
+    border: 2px solid #00796b; /* Teal border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.problem-box h2 {
+    color: #004d40; /* Dark teal for problem source */
+}
+
+.problem-box p {
+    font-size: 1em;
+    color: #333; /* Dark grey for text */
+}
