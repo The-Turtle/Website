@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Events - Holden Mui</title>
+        <link
+            rel="icon"
+            href="../files/images/turtleicon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="top-left-name">
+                <img
+                    src="../files/images/turtleicon.png"
+                    alt="Turtle icon"
+                    class="name-icon"
+                />
+                <div style="display: inline-block">
+                    <div class="hide-name">
+                        <a class="namebtn" href="../index.html">Holden Mui</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="dropdown">
+                    <a class="dropbtn" href="../index.html">Home</a>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">MIT</a>
+                    <div class="dropdown-content">
+                        <a href="../mit/coursework.html">Coursework</a>
+                        <a href="../mit/events.html">Events</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Math</a>
+                    <div class="dropdown-content">
+                        <a href="../math/research.html">Research</a>
+                        <a href="../math/talks.html">Talks</a>
+                        <a href="../math/teaching.html">Teaching</a>
+                        <a href="../math/olympiad.html">Olympiad</a>
+                        <a href="../math/puzzles.html">Puzzles</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Music</a>
+                    <div class="dropdown-content">
+                        <a href="../music/piano.html">Piano</a>
+                        <a href="../music/composition.html">Composition</a>
+                        <a href="../music/arrangements.html">Arrangements</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Other</a>
+                    <div class="dropdown-content">
+                        <a href="../other/resume.html">Resume</a>
+                        <a href="../other/writing.html">Writing</a>
+                        <a href="../other/gallery.html">Gallery</a>
+                        <a href="../other/random.html">Random</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Events</h1>
+            <h2 id="compositionrecital">Composition Recital</h2>
+            The composition recital already happened on May 14th, 2025. Those of
+            you looking for recordings of the pieces can find them on this
+            <a
+                href="https://www.youtube.com/playlist?list=PLRjA4SLedN6RrFRvtnvr-VQK9_DRHAdky"
+                >playlist</a
+            >.
+        </main>
+    </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach((dropdown) => {
+                const button = dropdown.querySelector(".dropbtn");
+                button.addEventListener("click", () => {
+                    dropdown.classList.toggle("active");
+                });
+            });
+
+            // Optional: Close dropdown if clicking outside
+            document.addEventListener("click", (e) => {
+                dropdowns.forEach((dropdown) => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove("active");
+                    }
+                });
+            });
+        });
+    </script>
+</html>

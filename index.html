@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home - Holden Mui</title>
+        <link
+            rel="icon"
+            href="files/images/turtleicon.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <style>
+            .home-page-image {
+                width: 50%;
+                float: right;
+                margin-left: 20px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="top-left-name">
+                <img
+                    src="files/images/turtleicon.png"
+                    alt="Turtle icon"
+                    class="name-icon"
+                />
+                <div style="display: inline-block">
+                    <div class="hide-name">
+                        <a class="namebtn" href="index.html">Holden Mui</a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="dropdown">
+                    <a class="dropbtn" href="index.html">Home</a>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">MIT</a>
+                    <div class="dropdown-content">
+                        <a href="mit/coursework.html">Coursework</a>
+                        <a href="mit/events.html">Events</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Math</a>
+                    <div class="dropdown-content">
+                        <a href="math/research.html">Research</a>
+                        <a href="math/talks.html">Talks</a>
+                        <a href="math/teaching.html">Teaching</a>
+                        <a href="math/olympiad.html">Olympiad</a>
+                        <a href="math/puzzles.html">Puzzles</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Music</a>
+                    <div class="dropdown-content">
+                        <a href="music/piano.html">Piano</a>
+                        <a href="music/composition.html">Composition</a>
+                        <a href="music/arrangements.html">Arrangements</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a class="dropbtn">Other</a>
+                    <div class="dropdown-content">
+                        <a href="other/resume.html">Resume</a>
+                        <a href="other/writing.html">Writing</a>
+                        <a href="other/gallery.html">Gallery</a>
+                        <a href="other/random.html">Random</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Hi!</h1>
+            <div class="home-page-image">
+                <div class="hover-image">
+                    <img
+                        src="files/images/holdenmui.jpg"
+                        alt="Headshot"
+                        class="default"
+                    />
+                    <img
+                        src="files/images/turtles.jpg"
+                        alt="Turtle plushies"
+                        class="hover"
+                    />
+                </div>
+            </div>
+            <p>I'm Holden!</p>
+            <h2>About Me</h2>
+            <p>
+                I'm currently a research engineer at 0xPARC Foundation working
+                on programmable cryptography. In my spare time, I like to work
+                on my music projects. I recently graduated from MIT with a
+                mathematics and music major, along with a physics minor. I grew
+                up in Lisle, Illinois and I was part of Next House's 5W living
+                group. Turtles are my favorite animal, and Maurice Ravel is my
+                favorite composer.
+            </p>
+            <h2>Contact</h2>
+            <p>You can reach me at hsmui (at) mit (dot) edu.</p>
+        </main>
+    </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const dropdowns = document.querySelectorAll(".dropdown");
+
+            dropdowns.forEach((dropdown) => {
+                const button = dropdown.querySelector(".dropbtn");
+                button.addEventListener("click", () => {
+                    dropdown.classList.toggle("active");
+                });
+            });
+
+            // Optional: Close dropdown if clicking outside
+            document.addEventListener("click", (e) => {
+                dropdowns.forEach((dropdown) => {
+                    if (!dropdown.contains(e.target)) {
+                        dropdown.classList.remove("active");
+                    }
+                });
+            });
+        });
+    </script>
+</html>
